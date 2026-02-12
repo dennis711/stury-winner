@@ -1,3 +1,58 @@
+# Python Math Calculator
+
+A simple, interactive math calculator that runs in the terminal.
+
+## Features
+
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Support for parentheses to control operation order
+- Decimal number support
+- Error handling for invalid expressions and division by zero
+- User-friendly interface with clear instructions
+
+## Usage
+
+To run the calculator, simply execute:
+
+```bash
+python3 calculator.py
+```
+
+Or make it executable and run directly:
+
+```bash
+chmod +x calculator.py
+./calculator.py
+```
+
+### Examples
+
+```
+>>> 2 + 2
+Result: 4
+
+>>> (5 + 3) * 2
+Result: 16
+
+>>> 10 / 2 - 1
+Result: 4.0
+
+>>> 2.5 + 2.5
+Result: 5.0
+```
+
+Type `quit`, `exit`, or `q` to close the calculator, or press `Ctrl+C`.
+
+## Supported Operations
+
+- `+` : Addition
+- `-` : Subtraction
+- `*` : Multiplication
+- `/` : Division
+- `()` : Parentheses for grouping operations
+
+---
+
 # Introduction to GitHub
 
 _Get started using GitHub in less than an hour._
