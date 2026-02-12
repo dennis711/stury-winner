@@ -31,13 +31,9 @@ def evaluate_expression(expression):
     if not re.match(r'^[0-9+\-*/().\s]+$', expression):
         raise ValueError("Invalid characters in expression. Only numbers and operators (+, -, *, /, parentheses) are allowed.")
     
-    # Check for empty expression
-    if not expression:
-        raise ValueError("Empty expression")
-    
     try:
         # Use eval with a restricted namespace for safety
-        # Only allow basic math operations
+        # Only allow basic math operations, no built-in functions or name access
         result = eval(expression, {"__builtins__": {}}, {})
         return result
     except ZeroDivisionError:
